@@ -1,0 +1,121 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+
+}
+
+.container-header{
+    align-items: baseline;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #66B64D;
+}
+.header-icon{
+    display: flex;
+    gap: 20px;
+}
+.header-icon i{
+    cursor: pointer;
+}
+.header-content{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 50px;
+}
+.header-menu-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-lag{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+/* ---footer---- */
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./img/Rectangle 2.png');
+}
+footer img{
+    position: absolute;
+    inset: 0;
+}
+.Footer-container{
+    display: flex;
+    justify-content:center;
+    gap: 150px;
+    padding: 50px 200px;
+}
+.footer-ul ul a li{
+    list-style: none;
+}
+.footer-ul ul a{
+    color: white;
+    text-decoration:none;
+
+}
+.footer-ul ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.footer-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-text-row{
+    display: flex;
+    gap: 40px;
+}
+.footr-text-left{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer-end{
+    color: white;
+    align-items: flex-end;
+    padding:50px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-end-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-end-left h1{
+    font-size: 2.5rem;
+}
+
+.footer-end-row{
+    display: flex;
+    gap: 10px;
+}
+.footer-end-right{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.footer-icon{
+    display: flex;
+    gap: 15px;
+}
