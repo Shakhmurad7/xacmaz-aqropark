@@ -1,7 +1,8 @@
 import React from 'react'
 import '../Style.css'
 function Section() {
-  return (
+    return (
+<div className="section">
     <div className="Section-container">
         <div className="section-col">
             <div className="section-block">
@@ -13,33 +14,34 @@ function Section() {
                 </div>
             </div>
             <div className="section-block">
-                <img src={'./img/Rectangle 9.png'} />
+                <img src={'./img/Rectangle 8.png'} />
                 <h3>Xəbərlər</h3>
                 <div className="section-block-row">
                     <p>Ətraflı</p>
                     <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                </div>  
             </div>
         </div>
         <div className="section-row">
         <div className="section-block-1">
-                <img src={'./img/Rectangle 9.png'} />
+                <img src={'./img/Rectangle 6.png'} />
                 <h3>Xəbərlər</h3>
                 <div className="section-block-row">
-                    <p>Ətraflı</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
             <div className="section-block-1">
-                <img src={'./img/Rectangle 9.png'} />
+                <img src={'./img/Rectangle 5.png'} />
                 <h3>Xəbərlər</h3>
                 <div className="section-block-row">
-                    <p>Ətraflı</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
     </div>
+</div>
   )
 }
 
