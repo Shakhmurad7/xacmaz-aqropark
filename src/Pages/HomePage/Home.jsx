@@ -9,7 +9,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
-import ItemContainer from './ItemContainer';
+import ItemContainer from '../../layout/ItemContainer';
+import Section from '../../layout/Section';
 
 function Home() {
   return (
@@ -71,6 +72,9 @@ function Home() {
       </div>
 
       <ItemContainer/>
+
+
+      <Section/>
 
 
     </LayoutCompanent>
