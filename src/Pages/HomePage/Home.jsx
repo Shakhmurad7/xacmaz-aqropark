@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -43,7 +44,30 @@ function Home() {
     </div>
     </div>
     <div className="swiper-pos"></div>
+    <div className="header-text-pos">
+      <p>Məhsullar</p>
+      <h1>Biz aqrobiznes kommunikasiyaları ilə məşğul oluruq</h1>
+      <Link to={"/"} >Haqqımızda</Link>
+    </div>
     </Swiper>
+
+      <div className="content">
+          <div className="content-block">
+            <img src={"./img/Group 164.png"}/>
+            <h2>ət məhsulları</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+          <div className="content-block">
+            <img src={"./img/Group 165.png"}/>
+            <h2>süd məhsulları</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+          <div className="content-block">
+            <img src={"./img/Group 166.png"}/>
+            <h2>əkinçilik</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+      </div>
     </LayoutCompanent>
   )
 }
