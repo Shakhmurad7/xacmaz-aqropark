@@ -27,9 +27,11 @@ body{
     cursor: pointer;
 }
 .header-content{
+    color: white;
+    width: 100%;
     align-items: center;
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
     padding:20px 50px;
 }
 .header-menu-icon{
@@ -41,6 +43,53 @@ body{
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+/* ---swiper--- */
+.swiper-button-prev::after{
+    color: white;
+    font-size: 30px !important;
+}
+.swiper-button-next::after{
+    color: white;
+    font-size: 30px !important;
+}
+.swiper-button-prev{
+    top: auto !important;
+    bottom: 50px !important;
+    right: 100px !important;
+    left: auto !important;
+}
+.swiper-button-next{
+    top: auto !important;
+    bottom: 50px !important;
+    right: 50px !important;
+    left: auto !important;
+}
+.swiper-wrapper{
+    height: 550px !important;
+}
+.swiper-slide.swiper-slide-next img , .swiper-slide.swiper-slide-prev img , .swiper-slide.swiper-slide-active img , .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pos{
+    background-color: rgba(0, 0, 0, 0.352);
+    z-index: 1;
+    content: "";
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+    display: none;
+}
+.header-content{
+    z-index: 100;
+    position: absolute;
+    top:0;
 }
 /* ---footer---- */
 footer{
