@@ -9,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
+import ItemContainer from './ItemContainer';
 
 function Home() {
   return (
@@ -68,6 +69,10 @@ function Home() {
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
           </div>
       </div>
+
+      <ItemContainer/>
+
+
     </LayoutCompanent>
   )
 }
