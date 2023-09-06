@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 import ItemContainer from '../../layout/ItemContainer';
 import Section from '../../layout/Section';
+import Aside from '../../layout/Aside';
 
 function Home() {
   return (
@@ -71,12 +72,16 @@ function Home() {
           </div>
       </div>
 
+{/* ----Item----- */}
       <ItemContainer/>
 
-
+{/* ----section---- */}
       <Section/>
 
+{/* ---Aside---- */}
+      <Aside/>
 
+      
     </LayoutCompanent>
   )
 }

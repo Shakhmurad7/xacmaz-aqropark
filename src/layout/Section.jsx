@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Style.css'
+import { Link } from 'react-router-dom'
 function Section() {
     return (
 <div className="section">
@@ -8,36 +9,45 @@ function Section() {
             <div className="section-block">
                 <img src={'./img/Rectangle 9.png'} />
                 <h3>Xəbərlər</h3>
-                <div className="section-block-row">
-                    <p>Ətraflı</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                <Link to ={'/'}> 
+                    <div className="section-block-row">
+                        <p>Ətraflı</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </Link>
             </div>
             <div className="section-block">
                 <img src={'./img/Rectangle 8.png'} />
                 <h3>Xəbərlər</h3>
-                <div className="section-block-row">
-                    <p>Ətraflı</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>  
+                <Link to ={'/'}> 
+                    <div className="section-block-row">
+                        <p>Ətraflı</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </Link>
             </div>
         </div>
         <div className="section-row">
         <div className="section-block-1">
                 <img src={'./img/Rectangle 6.png'} />
                 <h3>Xəbərlər</h3>
-                <div className="section-block-row">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                <Link to ={'/'}> 
+                    <div className="section-block-row">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </Link>
             </div>
             <div className="section-block-1">
                 <img src={'./img/Rectangle 5.png'} />
                 <h3>Xəbərlər</h3>
-                <div className="section-block-row">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                <Link to ={'/'}> 
+                    <div className="section-block-row">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </Link>
+                
             </div>
         </div>
     </div>
