@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LayoutCompanent from '../../layoutCompanent/layoutCompanent'
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 
@@ -12,10 +12,17 @@ import { Link } from 'react-router-dom';
 import ItemContainer from '../../layout/ItemContainer';
 import Section from '../../layout/Section';
 import Aside from '../../layout/Aside';
+import NavBar from '../NavbarPage/NavBar';
 
 function Home() {
+  const [menu , setmenu] = useState(false)
+
   return (
+  <>
+      <NavBar menu={menu} setmenu={setmenu} />
+
     <LayoutCompanent>
+
 
     <Swiper
       // install Swiper modules
@@ -43,7 +50,9 @@ function Home() {
           <p>En</p>
           <p>Ru</p>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <div className="menu-icon" onClick={()=> setmenu(!menu)}>
+          <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
     </div>
     <div className="swiper-pos"></div>
@@ -83,6 +92,7 @@ function Home() {
 
       
     </LayoutCompanent>
+      </>
   )
 }
 

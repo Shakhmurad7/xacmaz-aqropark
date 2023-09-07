@@ -37,6 +37,9 @@ a{
     justify-content: space-between !important;
     padding:20px 50px;
 }
+.header-menu-icon i{
+    cursor: pointer;
+}
 .header-menu-icon{
     display: flex;
     align-items: center;
@@ -46,6 +49,83 @@ a{
     display: flex;
     gap: 5px;
     align-items: center;
+}
+.nav-container-top i{
+    cursor: pointer;
+}
+.nav-container-top{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    width: 100%;
+}
+.Navbar-content{
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.Navbar-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.navbar{
+    transition: .3s;
+    position: relative;
+    left: -100%;
+    z-index: 1000;
+    background-color: #00421D;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.navbar.active ul a{
+    color: white;
+    font-size: 35px;
+}
+.navbar.active ul li{
+
+    list-style: none;
+}
+.navbar.active ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.navbar.active{
+    align-items: baseline;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    left: 0;
+}
+.block-navbar-left{
+    color: white;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.navbar-left-page{
+    padding:30px 0;
+}
+.navber-icon-left{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 /* ---swiper--- */
@@ -304,6 +384,25 @@ aside{
     background-color: transparent;
     text-align: center;
     width: 100%;
+}
+.aside-input-col{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.aside-input-col input{
+    margin-top: 10px;
+}
+.aside-input-col button:hover{
+    background-color: #466E61;
+    color: white;
+}
+.aside-input-col button{
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: transparent;
 }
 /* ---footer---- */
 footer{

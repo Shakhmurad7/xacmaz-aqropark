@@ -1,25 +1,83 @@
-import React from 'react'
-import "../Style.css"
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import "../Style.css";
 function Aside() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+          ...formData,
+          [name]: value,
+          
+    });
+  };
+  const submitHandler = async (e) => {
+    e.preventDefault();
+
+    const { name, email, message } = formData;
+
+    console.log("Form Data:", formData);
+
+    try {
+      const response = await fetch("http://localhost:3000/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Message sent successfully!");
+      } else {
+        console.error("Error sending message.");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  };
+
   return (
-   <aside>
-        <div className="aside-container">
-            <div className="aside-top">
-                <p>Nə etdiyimizi bilmək istəyirsiniz?</p>
-                <h2>Yeniliklərdən xəbərdar olmaq üçün qeydiyyatdan keçin</h2>
-            </div>
-            <div className="aside-input">
-                <input type="text" placeholder='Ad,Soyad*' />
-                <input type="email"  placeholder='Email*'/>
-            </div>
-            <input type="text" placeholder='Mesaj*'/>
-            <Link to={'/'}>
-                Göndər
-            </Link>
+    <aside>
+      <div className="aside-container">
+        <div className="aside-top">
+          <p>Nə etdiyimizi bilmək istəyirsiniz?</p>
+          <h2>Yeniliklərdən xəbərdar olmaq üçün qeydiyyatdan keçin</h2>
         </div>
-   </aside>
-  )
+        <form onSubmit={submitHandler}>
+          <div className="aside-input">
+            <input
+              type="text"
+              placeholder="Ad, Soyad*"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              placeholder="Email*"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="aside-input-col">
+          <input
+            type="text"
+            placeholder="Mesaj*"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            />
+          <button type="submit">Göndər</button>
+            </div>
+        </form>
+      </div>
+    </aside>
+  );
 }
 
-export default Aside
+export default Aside;
