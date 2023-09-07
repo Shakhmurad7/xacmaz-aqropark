@@ -53,8 +53,11 @@ a{
 .nav-container-top i{
     cursor: pointer;
 }
+.nav-container-top i{
+    font-size: 30px;
+}
 .nav-container-top{
-    align-items: center;
+    align-items:flex-start;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -105,7 +108,7 @@ a{
 }
 .navbar.active{
     align-items: baseline;
-    padding: 100px;
+    padding: 70px 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;

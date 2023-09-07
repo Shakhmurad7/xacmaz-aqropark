@@ -7,14 +7,19 @@ function Aside() {
     message: "",
   });
   const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({
-          ...formData,
-          [name]: value,
-          
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
     });
   };
+
   const submitHandler = async (e) => {
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
     e.preventDefault();
 
     const { name, email, message } = formData;
@@ -25,8 +30,7 @@ function Aside() {
       const response = await fetch("http://localhost:3000/messages", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-        },
+          "Content-Type": "application/json",},
         body: JSON.stringify(formData),
       });
 
@@ -65,15 +69,17 @@ function Aside() {
             />
           </div>
           <div className="aside-input-col">
-          <input
-            type="text"
-            placeholder="Mesaj*"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
+            <input
+              type="text"
+              placeholder="Mesaj*"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
             />
-          <button type="submit">Göndər</button>
-            </div>
+            <button type="submit">
+              Göndər
+            </button>
+          </div>
         </form>
       </div>
     </aside>
