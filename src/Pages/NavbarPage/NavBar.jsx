@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../Style.css'
 
 function NavBar({menu , setmenu}) {
   return (
       <div className={`navbar ${menu? `active`:`navbar`}`}>
-
-
         <div className="nav-container-top">
             <img src={`./img/Frame.png`}/>
             <i class="fa-solid fa-xmark" onClick={()=>setmenu(!menu)}></i>
         </div>
         <div className="nav-container">
         <ul>
-            <Link to={'/'}><li>Home</li></Link>
-            <Link to={'/About'}><li>About</li></Link>
-            <Link to={'/About'}><li>About</li></Link>
-            <Link to={'/About'}><li>About</li></Link>
-            <Link to={'/About'}><li>About</li></Link>
-            <Link to={'/About'}><li>About</li></Link>
+            <Link to={'/'}><li>Ana Sehve</li></Link>
+            <Link to={'/About'}><li>Haqqımıda</li></Link>
+            <Link to={'/About'}><li>Məhsullar</li></Link>
+            <Link to={'/About'}><li>Xəbərlər</li></Link>
+            <Link to={'/About'}><li>Qalereya</li></Link>
+            <Link to={'/About'}><li>Vakansiyalar</li></Link>
+            <Link to={'/About'}><li>Əlaqə</li></Link>
         </ul>
         <div className="block-navbar-left">
             <div className="navbar-left-page">
