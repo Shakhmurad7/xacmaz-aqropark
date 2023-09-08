@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import '../../Style.css'
 
 function NavBar({menu , setmenu}) {
@@ -11,13 +11,13 @@ function NavBar({menu , setmenu}) {
         </div>
         <div className="nav-container">
         <ul>
-            <Link to={'/'}><li>Ana Sehve</li></Link>
-            <Link to={'/About'}><li>Haqqımıda</li></Link>
-            <Link to={'/About'}><li>Məhsullar</li></Link>
-            <Link to={'/About'}><li>Xəbərlər</li></Link>
-            <Link to={'/About'}><li>Qalereya</li></Link>
-            <Link to={'/About'}><li>Vakansiyalar</li></Link>
-            <Link to={'/About'}><li>Əlaqə</li></Link>
+            <NavLink to={'/'}><li>Ana Sehve</li></NavLink>
+            <NavLink to={'/About'}><li>Haqqımıda</li></NavLink>
+            <NavLink to={'/About'}><li>Məhsullar</li></NavLink>
+            <NavLink to={'/About'}><li>Xəbərlər</li></NavLink>
+            <NavLink to={'/About'}><li>Qalereya</li></NavLink>
+            <NavLink to={'/About'}><li>Vakansiyalar</li></NavLink>
+            <NavLink to={'/About'}><li>Əlaqə</li></NavLink>
         </ul>
         <div className="block-navbar-left">
             <div className="navbar-left-page">

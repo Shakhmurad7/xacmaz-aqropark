@@ -1,3 +1,5 @@
+
+/* ---Ccontent--- */
 .content{
     background-image: url('../../img/Rectangle 18 (4).png');
     width: 100%;
@@ -37,6 +39,7 @@
     left: 50px;
     z-index: 10;
 }
+/* ---Tab---- */
 .tab-1{
     color: black;
 }
@@ -76,4 +79,28 @@
 }
 .tab-none{
     display: none;
+}
+.partnyor-block{
+    gap: 30px;
+    display: flex;
+
+}
+.Partnyolar{
+    padding: 80px 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partnyolar-img img{
+    cursor: pointer;
+    transition: .4s;
+}
+.partnyolar-img img:hover{
+    filter: invert(100%); 
+    -webkit-filter: invert(100%); 
+}
+.Partnyolar h2{
+    padding-bottom: 40px;
+    font-size:2.5rem;
 }

@@ -7,7 +7,7 @@ function NavbarContent() {
   return (
     <>
     <NavBar menu={menu} setmenu={setmenu} />
-    <div className="big-container">
+<div className="big-container">
     <div className="header-content-block">
       <img src={'./img/Group 169.png'} />
         <div className="header-menu-icon">

@@ -79,6 +79,15 @@ a{
     gap: 5px;
     align-items: center;
 }
+a.active{
+    opacity: 0.6;
+}
+.nav-container ul a:hover{
+    opacity: 0.6;
+}
+.nav-container ul a{
+    transition: .5s;
+}
 .nav-container-top i{
     cursor: pointer;
 }
@@ -137,11 +146,14 @@ a{
 }
 .navbar.active{
     align-items: baseline;
+    position: fixed;
     padding: 70px 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     left: 0;
+    right: 0;
+    bottom: 0;
 }
 .block-navbar-left{
     color: white;
@@ -159,6 +171,7 @@ a{
     display: flex;
     gap: 20px;
 }
+
 
 /* ---swiper--- */
 .swiper-button-prev::after{
@@ -248,6 +261,10 @@ a{
     width: 350px;
     height: auto;
 }
+
+
+
+
 /* ----Item---- */
 .Item-Container{
     background-color: rgb(233, 240, 255);
@@ -296,6 +313,9 @@ a{
     border-top-left-radius: 110px;
     border-bottom-right-radius: 110px;
 }
+
+
+
 
 /* ---section--- */
 .section{
@@ -359,9 +379,8 @@ a{
 }
 
 
+
 /* -aside--- */
-
-
 aside{
     background-color: rgb(233, 240, 255);
     padding: 70px 0;
@@ -436,6 +455,9 @@ aside{
     padding: 5px;
     background-color: transparent;
 }
+
+
+
 /* ---footer---- */
 footer{
     position: relative;
