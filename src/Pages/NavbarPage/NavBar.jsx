@@ -6,7 +6,7 @@ function NavBar({menu , setmenu}) {
   return (
       <div className={`navbar ${menu? `active`:`navbar`}`}>
         <div className="nav-container-top">
-            <img src={`./img/Frame.png`}/>
+           <Link to={'/'}><img src={`./img/Frame.png`}/></Link> 
             <i class="fa-solid fa-xmark" onClick={()=>setmenu(!menu)}></i>
         </div>
         <div className="nav-container">

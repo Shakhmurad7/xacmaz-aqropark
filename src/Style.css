@@ -15,9 +15,12 @@ a{
     ;
 }
 .pElement-content{
+    color: black;
+    cursor: pointer;
     opacity: 0.7;
 }
 .pElement-bold{ 
+    cursor: pointer;
     position: relative;
     font-weight: bold;
 }
