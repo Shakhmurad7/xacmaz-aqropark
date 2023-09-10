@@ -17,7 +17,7 @@ function NavBar({menu , setmenu}) {
             <NavLink to={'/About'}><li>Xəbərlər</li></NavLink>
             <NavLink to={'/About'}><li>Qalereya</li></NavLink>
             <NavLink to={'/About'}><li>Vakansiyalar</li></NavLink>
-            <NavLink to={'/About'}><li>Əlaqə</li></NavLink>
+            <NavLink to={'/Contact'}><li>Əlaqə</li></NavLink>
         </ul>
         <div className="block-navbar-left">
             <div className="navbar-left-page">

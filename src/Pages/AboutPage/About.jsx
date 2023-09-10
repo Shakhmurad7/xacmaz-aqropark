@@ -13,14 +13,14 @@ function About() {
       <LayoutCompanent>
         <NavbarContent />
 
-        <div className={style["content"]}>
-          <div className={style["content-top-text"]}>
+        <div className="content-navbar-block">
+          <div className="content-top-text-navbar-block">
             <Link to={"/"}>
-              <p className="pElement-content">ana səhifə</p>
+              <p className="pElement-content-navabr-block">ana səhifə</p>
             </Link>
-            <p className="pElement-bold">haqqımızda</p>
+            <p className="pElement-bold-navbar-block">haqqımızda</p>
           </div>
-          <div className={style["content-text"]}>
+          <div className="content-text-navbar-block">
             <p>Haqqımızda</p>
             <h2>Biz aqrobiznes kommunikasiyaları ilə məşğul oluruq</h2>
           </div>

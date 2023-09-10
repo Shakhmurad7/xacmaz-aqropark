@@ -1,13 +1,13 @@
 
 /* ---Ccontent--- */
-.content{
+.content-navbar-block{
     background-image: url('../../img/Rectangle 18 (4).png');
     width: 100%;
     background-size: cover;
     height: 500px;
     position: relative;
 }
-.content::after{
+.content-navbar-block::after{
     content: "";
     inset: 0;
     position: absolute;
@@ -15,10 +15,10 @@
     width: 100%;
     height: 100%;
 }
-.content-text p{
+.content-text-navbar-block p{
     font-size: 25px;
 }
-.content-text{
+.content-text-navbar-block{
     color: white;
     position: absolute;
     display: flex;
@@ -31,7 +31,7 @@
     left: 80px;
     z-index: 10;
 }
-.content-top-text{
+.content-top-text-navbar-block{
     display: flex;
     gap: 30px;
     position: absolute;
