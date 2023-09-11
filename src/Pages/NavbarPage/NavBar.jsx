@@ -14,7 +14,7 @@ function NavBar({menu , setmenu}) {
             <NavLink to={'/'}><li>Ana Sehve</li></NavLink>
             <NavLink to={'/About'}><li>Haqqımıda</li></NavLink>
             <NavLink to={'/About'}><li>Məhsullar</li></NavLink>
-            <NavLink to={'/About'}><li>Xəbərlər</li></NavLink>
+            <NavLink to={'/News'}><li>Xəbərlər</li></NavLink>
             <NavLink to={'/About'}><li>Qalereya</li></NavLink>
             <NavLink to={'/About'}><li>Vakansiyalar</li></NavLink>
             <NavLink to={'/Contact'}><li>Əlaqə</li></NavLink>
