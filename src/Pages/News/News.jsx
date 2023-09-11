@@ -4,6 +4,7 @@ import LayoutCompanent from '../../layoutCompanent/layoutCompanent'
 import NavBar from '../NavbarPage/NavBar'
 import NavbarContent from '../../layoutCompanent/NavbarContent'
 import style from "./News.module.css"
+import { Link } from 'react-router-dom'
 const url = "https://json-xacmaz.vercel.app/posts"
 function News() {
     const [state , setState ] = useState([])
@@ -18,6 +19,22 @@ function News() {
   <LayoutCompanent>
       <NavBar/>
       <NavbarContent/>
+
+      <div className="content-navbar-block-news">
+          <div className="content-top-text-navbar-block">
+            <Link to={"/"}>
+              <p className="pElement-content-navabr-block">ana səhifə</p>
+            </Link>
+            <p className="pElement-bold-navbar-block">News</p>
+          </div>
+          <div className="content-text-navbar-block">
+            <p>News</p>
+            <h2>Biz aqrobiznes kommunikasiyaları ilə məşğul oluruq</h2>
+          </div>
+        </div>
+
+
+
       <div className={style['section-big-container']}>
         <div className={style["section-container"]}>
           {

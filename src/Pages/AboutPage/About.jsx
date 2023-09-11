@@ -13,7 +13,7 @@ function About() {
       <LayoutCompanent>
         <NavbarContent />
 
-        <div className="content-navbar-block">
+        <div className="content-navbar-block-news">
           <div className="content-top-text-navbar-block">
             <Link to={"/"}>
               <p className="pElement-content-navabr-block">ana səhifə</p>
