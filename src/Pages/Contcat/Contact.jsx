@@ -5,6 +5,7 @@ import NavBar from '../NavbarPage/NavBar'
 import NavbarContent from '../../layoutCompanent/NavbarContent'
 import { Link } from 'react-router-dom'
 import Iframe from 'react-iframe'
+import Aside from '../../layout/Aside'
 
 
 function Contact() {
@@ -58,6 +59,8 @@ function Contact() {
                 </div>
             </div>
         </div>
+
+        <Aside/>
 
         </LayoutCompanent>
     </>
