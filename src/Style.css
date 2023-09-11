@@ -579,3 +579,18 @@ footer img{
     left: 50px;
     z-index: 10;
 }
+.content-navbar-block-contact{
+    background-image: url('../../img/Rectangle 182.png');
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.content-navbar-block-contact::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.215);
+    width: 100%;
+    height: 100%;
+}
