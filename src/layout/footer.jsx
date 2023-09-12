@@ -49,9 +49,9 @@ function Footer() {
           <div className="footer-end-right">
             <p>Bizi izləyin!</p>
             <div className="footer-icon">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-instagram"></i>
             </div>
           </div>
         </div>

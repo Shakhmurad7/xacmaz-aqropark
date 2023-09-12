@@ -1,0 +1,29 @@
+.section{
+    display:flex;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+.section-container{
+    display: flex;
+    justify-content: center;
+}
+.section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.section-left p{
+    font-weight: 700;
+}
+.section-left a{
+    width: fit-content;
+    padding: 5px 20px ;
+    background-color: 
+    #66B64D;
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}

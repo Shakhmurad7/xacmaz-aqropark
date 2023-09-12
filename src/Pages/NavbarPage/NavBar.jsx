@@ -7,7 +7,7 @@ function NavBar({menu , setmenu}) {
       <div className={`navbar ${menu? `active`:`navbar`}`}>
         <div className="nav-container-top">
            <Link to={'/'}><img src={`./img/Frame.png`}/></Link> 
-            <i class="fa-solid fa-xmark" onClick={()=>setmenu(!menu)}></i>
+            <i className="fa-solid fa-xmark" onClick={()=>setmenu(!menu)}></i>
         </div>
         <div className="nav-container">
         <ul>
@@ -28,9 +28,9 @@ function NavBar({menu , setmenu}) {
                 <p>+994 50 123 45 67 / +994 70 123 45 67</p>
                 <p>Lorem Ipsum is simply dummy text of the printing</p>
                 <div className="navber-icon-left">
-                    <i class="fa-solid fa-envelope"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-solid fa-envelope"></i>
+                    <i className="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-facebook"></i>
                 </div>
             </div>
         </div>

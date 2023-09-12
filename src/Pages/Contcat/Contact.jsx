@@ -44,15 +44,15 @@ function Contact() {
                     <h3>Bizi izlə!</h3>
                     <div className={style['right-block-icon']}>
                         <div className={style["right-icon-row"]}>
-                            <i class="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-instagram"></i>
                             <p>Instagram</p>
                         </div>
                         <div className={style["right-icon-row"]}>
-                             <i class="fa-solid fa-envelope"></i>
+                             <i className="fa-solid fa-envelope"></i>
                             <p>Email</p>
                         </div>
                         <div className={style["right-icon-row"]}>
-                            <i class="fa-brands fa-facebook"></i>
+                            <i className="fa-brands fa-facebook"></i>
                             <p>Facebook</p>
                         </div>
                     </div>

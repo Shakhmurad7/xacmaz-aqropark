@@ -12,7 +12,7 @@ function Section() {
                 <Link to ={'/'}> 
                     <div className="section-block-row">
                         <p>Ətraflı</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </Link>
             </div>
@@ -22,7 +22,7 @@ function Section() {
                 <Link to ={'/'}> 
                     <div className="section-block-row">
                         <p>Ətraflı</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </Link>
             </div>
@@ -34,7 +34,7 @@ function Section() {
                 <Link to ={'/'}> 
                     <div className="section-block-row">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </Link>
             </div>
@@ -44,7 +44,7 @@ function Section() {
                 <Link to ={'/'}> 
                     <div className="section-block-row">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </div>
                 </Link>
                 

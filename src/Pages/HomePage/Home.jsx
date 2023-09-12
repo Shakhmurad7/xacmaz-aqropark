@@ -49,7 +49,7 @@ function Home() {
           <p>Ru</p>
         </div>
         <div className="menu-icon" onClick={()=> setmenu(!menu)}>
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </div>
     </div>
     </div>

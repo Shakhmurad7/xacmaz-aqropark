@@ -9,9 +9,14 @@ const url = "https://json-xacmaz.vercel.app/posts"
 function News() {
     const [state , setState ] = useState([])
     useEffect(() => {
-      axios.get(url).then(({ data }) => {
-        setState(data);
-      });
+      axios.get(url)
+        .then(({ data }) => {
+          setState(data);
+          console.log(data);
+        })
+        .catch(error => {
+          console.error("Error fetching data:", error);
+        });
     }, []);
     
   return (
@@ -40,7 +45,7 @@ function News() {
           {
             state.slice(0,2).map(({ text, id, title, img, date, time }) => {
               return (
-                <div className={style["section-block"]}>
+                <div key={id} className={style["section-block"]}>
                     <div className={style["section-img"]}>
                         <img src={`./img/${img}.png`}/>
                     </div>
@@ -48,7 +53,7 @@ function News() {
                         <h2>{title}</h2>
                         <p>{text}</p>
                         <div className={style["section-text-icon"]}>
-                             <i class="fa-regular fa-clock"></i>
+                             <i className="fa-regular fa-clock"></i>
                             <p>{date}</p>
                             <p>{time}</p>
                         </div>
@@ -63,7 +68,7 @@ function News() {
           {
             state.slice(2,6).map(({ text, id, title, img, date, time }) => {
               return (
-                <div className={style["section-block-center"]}>
+                <div key={id} className={style["section-block-center"]}>
                     <div className={style["section-img-center"]}>
                         <img src={`./img/${img}.png`}/>
                     </div>
@@ -71,7 +76,7 @@ function News() {
                         <h2 className={style['section-h2-text-center']}>{title}</h2>
                         <p>{text}</p>
                         <div className={style["section-text-icon"]}>
-                             <i class="fa-regular fa-clock"></i>
+                             <i className="fa-regular fa-clock"></i>
                             <p>{date}</p>
                             <p>{time}</p>
                         </div>
@@ -86,7 +91,7 @@ function News() {
           {
             state.slice(6,10).map(({ text, id, title, img, date, time }) => {
               return (
-                <div className={style["section-block-center"]}>
+                <div key={id} className={style["section-block-center"]}>
                     <div className={style["section-img-center"]}>
                         <img src={`./img/${img}.png`}/>
                     </div>
@@ -94,7 +99,7 @@ function News() {
                         <h2 className={style['section-h2-text-center']}>{title}</h2>
                         <p>{text}</p>
                         <div className={style["section-text-icon"]}>
-                             <i class="fa-regular fa-clock"></i>
+                             <i className="fa-regular fa-clock"></i>
                             <p>{date}</p>
                             <p>{time}</p>
                         </div>
