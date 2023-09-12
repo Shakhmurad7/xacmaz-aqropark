@@ -5,6 +5,7 @@ import LayoutCompanent from "../../layoutCompanent/layoutCompanent";
 import NavBar from "../NavbarPage/NavBar";
 import NavbarContent from "../../layoutCompanent/NavbarContent";
 import style from "./Qalereya.module.css";
+import { Link } from "react-router-dom";
 const url = `https://json-xacmaz.vercel.app/posts2`;
 function Qalereya({ user, dispatch }) {
   useEffect(() => {
@@ -21,6 +22,22 @@ function Qalereya({ user, dispatch }) {
       <LayoutCompanent>
         <NavBar />
         <NavbarContent />
+
+        
+        <div className="content-navbar-block-qalereya">
+          <div className="content-top-text-navbar-block-qalereya">
+            <Link to={"/"}>
+              <p className="pElement-content-navabr-block-qalereya">ana səhifə</p>
+            </Link>
+            <p className="pElement-bold-navbar-block-qalereya">Qalereya</p>
+          </div>
+          <div className="content-text-navbar-block">
+            <p>Qalereya</p>
+            <h2>Biz aqrobiznes kommunikasiyaları ilə məşğul oluruq</h2>
+          </div>
+        </div>
+
+
         <div className={style['section-big-container']}>
 
         <div className={style["section-container"]}>
