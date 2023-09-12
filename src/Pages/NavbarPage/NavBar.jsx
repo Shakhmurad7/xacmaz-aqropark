@@ -13,10 +13,10 @@ function NavBar({menu , setmenu}) {
         <ul>
             <NavLink to={'/'}><li>Ana Sehve</li></NavLink>
             <NavLink to={'/About'}><li>Haqqımıda</li></NavLink>
-            <NavLink to={'/About'}><li>Məhsullar</li></NavLink>
+            <NavLink to={'/Mehsuller'}><li>Məhsullar</li></NavLink>
             <NavLink to={'/News'}><li>Xəbərlər</li></NavLink>
-            <NavLink to={'/About'}><li>Qalereya</li></NavLink>
-            <NavLink to={'/About'}><li>Vakansiyalar</li></NavLink>
+            <NavLink to={'/Qalereya'}><li>Qalereya</li></NavLink>
+            <NavLink to={'/Vakansiyalar'}><li>Vakansiyalar</li></NavLink>
             <NavLink to={'/Contact'}><li>Əlaqə</li></NavLink>
         </ul>
         <div className="block-navbar-left">

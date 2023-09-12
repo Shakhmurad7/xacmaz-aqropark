@@ -4,6 +4,7 @@ import About from "./Pages/AboutPage/About"
 import Contact from "./Pages/Contcat/Contact"
 import News from "./Pages/News/News"
 import NotFound from "./Pages/NotFound/NotFound"
+import Qalereya from "./Pages/Qalereya/Qalereya"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/About" element={<About/>} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/News" element={<News/>} />
+        <Route path="/Qalereya" element={<Qalereya/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
     </>
