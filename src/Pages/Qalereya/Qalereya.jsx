@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import axios, { all } from "axios";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import LayoutCompanent from "../../layoutCompanent/layoutCompanent";
 import NavBar from "../NavbarPage/NavBar";
@@ -8,6 +8,12 @@ import style from "./Qalereya.module.css";
 import { Link } from "react-router-dom";
 const url = `https://json-xacmaz.vercel.app/posts2`;
 function Qalereya({ user, dispatch }) {
+
+  const [open , setopen] = useState("img")
+
+  const tab =(i)=>{
+    setopen(i)
+  }
   useEffect(() => {
     axios.get(url).then(({ data }) => {
       dispatch({
@@ -16,6 +22,16 @@ function Qalereya({ user, dispatch }) {
       });
     });
   }, []);
+
+
+  const Filterdata = user.filter((item)=>{
+    if(open === 'img'){
+      return item.catigori === 'img'
+    }
+    else{
+      return item.catigori === "video"
+    }
+  })
 
   return (
     <>
@@ -37,12 +53,19 @@ function Qalereya({ user, dispatch }) {
           </div>
         </div>
 
+      <div className={style['content']}>
+        <div className={style['content-container']}>
+            <p className={style[open === "img"? `pElement`: `active`]}   onClick={()=>tab('img')} > Fotoqalereya</p>
+            <p className={style[open === 'video'? `pElement`: `active`]}   onClick={()=>tab('video  ')} > Videoqalereya</p>
+        </div>
+      </div>
+
 
         <div className={style['section-big-container']}>
 
-        <div className={style["section-container"]}>
+          <div className={style["section-container"]}>
 
-          {user.slice(0, 1).map(({ img }) => {
+          {Filterdata.slice(0, 1).map(({ img }) => {
             return <img src={`./img/${img}.png`} />;
           })}
 
@@ -50,7 +73,7 @@ function Qalereya({ user, dispatch }) {
 
             <div className={style["section-col"]}>
 
-              {user.slice(1, 4).map(({ img }) => {
+              {Filterdata.slice(1, 4).map(({ img }) => {
                 return <img src={`./img/${img}.png`} />;
               })}
 
@@ -58,7 +81,7 @@ function Qalereya({ user, dispatch }) {
 
             <div className={style["section-col"]}>
 
-              {user.slice(4, 7).map(({ img }) => {
+              {Filterdata.slice(4, 7).map(({ img }) => {
                   return <img src={`./img/${img}.png`} />;
                 })}
               
@@ -72,7 +95,7 @@ function Qalereya({ user, dispatch }) {
 
             <div className={style["section-col"]}>
 
-            {user.slice(7, 10).map(({ img }) => {
+            {Filterdata.slice(7, 10).map(({ img }) => {
                 return <img src={`./img/${img}.png`} />;
             })}
 
@@ -80,21 +103,29 @@ function Qalereya({ user, dispatch }) {
 
                  <div className={style["section-col"]}>
 
-                 {user.slice(10, 13).map(({ img }) => {
+                 {Filterdata.slice(10, 13).map(({ img }) => {
                      return <img src={`./img/${img}.png`} />;
                     })}
             </div>
         </div>
 
-        {user.slice(13, 14).map(({ img }) => {
+        {Filterdata.slice(13, 14).map(({ img }) => {
          return <img src={`./img/${img}.png`} />;
             })}
 
 
         </div>
-         
-    
     </div>
+
+
+        <div className={style['video-content']}>
+            {Filterdata.slice(14, 18).map(({ img }) => {
+                 return <img src={`./img/${img}.png`} />;
+             })}
+        </div>
+
+
+
       </LayoutCompanent>
     </>
   );
