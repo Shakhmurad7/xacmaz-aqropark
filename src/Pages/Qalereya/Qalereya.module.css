@@ -1,0 +1,25 @@
+.section-container{
+    display: flex;
+    gap: 10px;
+}
+.section-block-left{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.section-col img{
+    max-width:250px ;
+    width:100%;
+    height: 250px;
+}
+.section-col{
+    display: flex;
+    gap: 10px;
+}
+.section-big-container{
+    padding: 50px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
