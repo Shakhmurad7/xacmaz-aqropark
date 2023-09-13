@@ -16,45 +16,6 @@
     width: 100%;
     max-width: 600px;
 }
-/* .section-img-left img{
-    position: relative;
-    z-index: 10;
-}
-.section-img-left{
-    z-index: 10;
-    position: relative;
-}
-.section-img-left::after{
-    left: 30px;
-    top: 25px;
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    border: 1px solid;
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 120px;
-}
-.section-img-right img{
-    position: relative;
-    z-index: 10;
-}
-.section-img-right{
-    z-index: 10;
-    position: relative;
-}
-.section-img-right::after{
-    left: -30px;
-    top: 25px;
-    width: 100%;    
-    height: 100%;
-    content: '';
-    position: absolute;
-    border: 1px solid;
-    border-top-left-radius: 120px;
-    border-bottom-right-radius: 120px;
-} */
-
 
 .pElement{
     opacity: 0.6;

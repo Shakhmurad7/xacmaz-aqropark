@@ -1,9 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import LayoutCompanent from '../../layoutCompanent/layoutCompanent'
-import NavBar from '../NavbarPage/NavBar'
-import NavbarContent from '../../layoutCompanent/NavbarContent'
+
 import style from "./News.module.css"
 import { Link } from 'react-router-dom'
 const url = `https://json-xacmaz.vercel.app/posts`
@@ -22,9 +20,7 @@ function DataNews() {
     
   return (
     <>
-    <LayoutCompanent>
-        <NavBar/>
-        <NavbarContent/>
+
   
         <div className="content-navbar-block-news">
             <div className="content-top-text-navbar-block">
@@ -112,8 +108,7 @@ function DataNews() {
                 </div>
               </div>
           
-    </LayoutCompanent>
-    </>
+   </>
   )
 }
 

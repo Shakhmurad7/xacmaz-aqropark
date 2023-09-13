@@ -1,21 +1,22 @@
 import { Suspense, lazy } from "react"
+import LayoutCompanent from "../../layoutCompanent/layoutCompanent"
+import NavBar from "../NavbarPage/NavBar"
+import NavbarContent from "../../layoutCompanent/NavbarContent"
 // import DataNews from "./dataNews"
 const DataNews = lazy(()=>import("./dataNews"))
 function News() {
   return (
   <>
-  <Suspense fallback={<div class="spinner">
-  <div class="blob top"></div>
-  <div class="blob bottom"></div>
-  <div class="blob left"></div>
-  
-  <div class="blob move-blob"></div>
-  </div>}>
-    
-    <DataNews/>
-  
-</Suspense>
 
+    <LayoutCompanent>
+        <NavBar/>
+    <NavbarContent/>
+  
+  <Suspense fallback={<div className="Fallback"><img src={'./img/b620ccb3ae8c14ea5447d159ebb1da58.gif'}/></div>}>
+    <DataNews/>
+  </Suspense>
+
+  </LayoutCompanent>
   </>
   )
 }
