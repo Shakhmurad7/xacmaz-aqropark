@@ -6,10 +6,11 @@ import {Provider} from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import rooteredux from './Pages/Qalereya/redux.jsx'
 
-const stor = createStore(rooteredux)
+
+const store = createStore(rooteredux)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<Provider store={stor}>
+<Provider store={store}>
   <React.StrictMode>
     <BrowserRouter>
       <App />
