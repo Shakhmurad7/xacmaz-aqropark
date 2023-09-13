@@ -7,16 +7,16 @@ function Footer() {
         <div className="Footer-container">
           <div className="footer-ul">
             <ul>
-              <Link to={'/'}> <li>Haqqımızda</li></Link>
-              <Link to={'/'}> <li>Məhsullar</li></Link>
-              <Link to={'/'}> <li>Qalereya</li></Link>
+              <Link to={'/About'}> <li>Haqqımızda</li></Link>
+              <Link to={'/Mehsullar'}> <li>Məhsullar</li></Link>
+              <Link to={'/Qalereya'}> <li>Qalereya</li></Link>
             </ul>
           </div>
           <div className="footer-ul">
             <ul>
-              <Link to={'/'}><li>Xəbərlər</li></Link>
-              <Link to={'/'}><li>Vakansiya</li></Link>
-              <Link to={'/'}><li>Əlaqə</li></Link>
+              <Link to={'/News'}><li>Xəbərlər</li></Link>
+              <Link to={'/Vakansiya'}><li>Vakansiya</li></Link>
+              <Link to={'/Contact'}><li>Əlaqə</li></Link>
             </ul>
           </div>
 

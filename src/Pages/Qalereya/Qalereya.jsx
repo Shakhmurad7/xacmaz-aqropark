@@ -56,7 +56,7 @@ function Qalereya({ user, dispatch }) {
       <div className={style['content']}>
         <div className={style['content-container']}>
             <p className={style[open === "img"? `pElement`: `active`]}   onClick={()=>tab('img')} > Fotoqalereya</p>
-            <p className={style[open === 'video'? `pElement`: `active`]}   onClick={()=>tab('video  ')} > Videoqalereya</p>
+            <p className={style[open === 'video'? `pElement`: `active`]}   onClick={()=>tab('video')} > Videoqalereya</p>
         </div>
       </div>
 
