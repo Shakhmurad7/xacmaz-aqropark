@@ -3,14 +3,13 @@ import Home from "./Pages/HomePage/Home";
 import About from "./Pages/AboutPage/About";
 import Contact from "./Pages/Contcat/Contact";
 import News from "./Pages/News/News";
-import NotFound from "./Pages/NotFound/NotFound";
+// import NotFound from "./Pages/NotFound/NotFound";
 import { lazy, Suspense } from "react";
 import Mehsullar from "./Pages/Mehsullar/Mehsullar";
 import Vakansiyalar from "./Pages/Vakansiyalar/Vakansiyalar";
 import VakansiyaSingle from "./Pages/Vakansiyalar/VakansiyaSingle";
 
-// Remove this assignment
-// Qalereya = lazy(() => import('./Pages/Qalereya/Qalereya'));
+
 const Qalereya = lazy(() => import('./Pages/Qalereya/Qalereya'));
 
 function App() {
@@ -32,7 +31,7 @@ function App() {
           <Route path="/Mehsullar" element={<Mehsullar/>} />
           <Route path="/Vakansiyalar" element={<Vakansiyalar/>} />
           <Route path="/Vakansiyalar/:id" element={<VakansiyaSingle/>} />
-          <Route path="*" element={<NotFound/>} />
+          {/* <Route path="*" element={<NotFound/>} /> */}
         </Routes>
       </Suspense>
     </>
