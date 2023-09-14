@@ -3,7 +3,7 @@ import LayoutCompanent from "../../layoutCompanent/layoutCompanent"
 import NavBar from "../NavbarPage/NavBar"
 import NavbarContent from "../../layoutCompanent/NavbarContent"
 // import DataNews from "./dataNews"
-const DataNews = lazy(()=>import("./dataNews"))
+const DataNews = lazy(()=>import("./DataNews"))
 function News() {
   return (
   <>
