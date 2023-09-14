@@ -7,7 +7,6 @@ function LayoutCompanent(a) {
   return (
     <>
     <Header/>
-    {/* <NavBar/> */}
         <main>{a.children}</main>
     <Footer/>
     </>

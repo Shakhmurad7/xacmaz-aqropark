@@ -14,12 +14,12 @@ const Qalereya = lazy(() => import('./Pages/Qalereya/Qalereya'));
 function App() {
   return (
     <>
-      <Suspense fallback={<div class="spinner">
-  <div class="blob top"></div>
-  <div class="blob bottom"></div>
-  <div class="blob left"></div>
+      <Suspense fallback={<div className="spinner">
+  <div className="blob top"></div>
+  <div className="blob bottom"></div>
+  <div className="blob left"></div>
   
-  <div class="blob move-blob"></div>
+  <div className="blob move-blob"></div>
 </div>}>
         <Routes>
           <Route path="/" element={<Home />} />
