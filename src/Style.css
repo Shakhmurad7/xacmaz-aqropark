@@ -656,6 +656,28 @@ footer img{
     height: 100%;
 }
 
+.content-navbar-block-vakansiyalar{
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    background-image: url('./img/Rectangle 18 (10).png');
+}
+.content-navbar-block-vakansiyalar::after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.215);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
 .Fallback{
     text-align: center;
 }

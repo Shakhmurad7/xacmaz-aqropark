@@ -6,6 +6,7 @@ import News from "./Pages/News/News";
 import NotFound from "./Pages/NotFound/NotFound";
 import { lazy, Suspense } from "react";
 import Mehsullar from "./Pages/Mehsullar/Mehsullar";
+import Vakansiyalar from "./Pages/Vakansiyalar/Vakansiyalar";
 
 // Remove this assignment
 // Qalereya = lazy(() => import('./Pages/Qalereya/Qalereya'));
@@ -28,6 +29,7 @@ function App() {
           <Route path="/News" element={<News />} />
           <Route path="/Qalereya" element={<Qalereya />} />
           <Route path="/Mehsullar" element={<Mehsullar/>} />
+          <Route path="/Vakansiyalar" element={<Vakansiyalar/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
