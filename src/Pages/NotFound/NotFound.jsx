@@ -1,6 +1,6 @@
 import React from 'react'
 import LayoutCompanent from '../../layoutCompanent/layoutCompanent'
-import style from './NotFound.module.css'
+import style from './index.module.css'
 import { Link } from 'react-router-dom'
 
 function NotFound() {
