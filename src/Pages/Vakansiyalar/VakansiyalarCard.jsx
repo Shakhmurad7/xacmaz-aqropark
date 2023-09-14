@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 const url = 'https://json-xacmaz.vercel.app/post4'
 import style from './Vakansiyalar.module.css'
+import { Link } from 'react-router-dom'
 function VakansiyalarCard({user , dispatch}) {
 
 useEffect(()=>{
@@ -52,7 +53,7 @@ useEffect(()=>{
                         <h3>{item}</h3>
                         <div className={style["section-text-row"]}>
                             <p>Razılaşma əsasında</p>
-                            <b>ətraflı</b>
+                            <Link to={`/Vakansiyalar/${id}`}><b>ətraflı</b></Link>
                         </div>
                         <p>{text}</p>
                         <div className={style["section-end-text"]}>

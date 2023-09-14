@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from "../../../public/img/Frame.png"
 import '../../Style.css'
 
 function NavBar({menu , setmenu}) {
   return (
       <div className={`navbar ${menu? `active`:`navbar`}`}>
         <div className="nav-container-top">
-           <Link to={'/'}><img src={`./img/Frame.png`}/></Link> 
+           <Link to={'/'}><img src={logo}/></Link> 
             <i className="fa-solid fa-xmark" onClick={()=>setmenu(!menu)}></i>
         </div>
         <div className="nav-container">

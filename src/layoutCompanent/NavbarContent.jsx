@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import NavBar from "../Pages/NavbarPage/NavBar";
 import "../Style.css";
 import { Link } from "react-router-dom";
+import logo from "../../public/img/Frame.png"
+
 
 function NavbarContent() {
   const [menu, setmenu] = useState(false);
@@ -12,7 +14,7 @@ function NavbarContent() {
         <div className="header-content-block">
           <Link to={"/"}>
             {" "}
-            <img src={"./img/Group 169.png"} />
+            <img src={logo} />
           </Link>
           <div className="header-menu-icon">
             <div className="header-lag">
