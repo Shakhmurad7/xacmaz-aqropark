@@ -37,7 +37,7 @@ function Home() {
         disableOnInteraction:false
     }}
     >
-      <SwiperSlide><img src={'./img/Rectangle 18 (1).png'} alt="" /></SwiperSlide>
+      <SwiperSlide><img src={'./img/Rectangle 122.png'} alt="" /></SwiperSlide>
       <SwiperSlide><img src={'./img/Rectangle 18 (2).png'} alt="" /></SwiperSlide>
       <SwiperSlide><img src={'./img/Rectangle 12.png'} alt="" /></SwiperSlide>
       <SwiperSlide><img src={'./img/Rectangle 18.png'} alt="" /></SwiperSlide>
