@@ -8,6 +8,7 @@ function VakansiyaSingle() {
     const {id} = useParams({})
   return (
     <LayoutCompanent>
+        
         <NavBar/>
         <NavbarContent/>
         <h1>{id}</h1>
