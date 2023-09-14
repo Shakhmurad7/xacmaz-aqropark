@@ -23,17 +23,24 @@
 .section-text-row{
     display: flex;
 }
+.section-text-row b:hover{
+    background-color: #66B64D;
+    color: white;
+}
 .section-text-row b{
+    margin-left: -34px;
+    transition: .5s;
     cursor: pointer;
-    border-radius:80px 80px 80px 0px;
+    border-radius:0px 80px 80px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 5px 40px 5px 20px;
+    padding: 5px 40px 5px 40px;
 }
 .section-text-row p{
+    position: relative;
     border-radius: 80px 200px 0px 80px;
     color: white;
     background-color:#66B64D ;
-    padding: 5px 20px;
+    padding: 5px 30px 5px 20px;
 }
 .section-end-text{
     align-self: flex-end;
