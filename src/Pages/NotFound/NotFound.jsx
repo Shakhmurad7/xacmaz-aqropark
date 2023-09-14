@@ -15,7 +15,7 @@ function NotFound() {
                             <Link to={'/'}>Ana sehve</Link>
                     </div>
                     <div className={style['section-right']}>
-                        <img src={'./img/Group 28.png'} />
+                        <img src={'./img/Group 28.png'} /> 
                     </div>
                 </div>
                 </div>
