@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function NotFound() {
   return (
         <>
-            <LayoutCompanent>
+            <LayoutCompanent> 
                 <div className={style["section-container"]}>
                 <div className={style["section"]}>
                     <div className={style['section-left']}>
