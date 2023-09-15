@@ -23,11 +23,12 @@
 .section-text-row{
     display: flex;
 }
-.section-text-row b:hover{
+.section-text-row a:hover{
     background-color: #66B64D;
     color: white;
 }
-.section-text-row b{
+.section-text-row a{
+    color: black;
     margin-left: -34px;
     transition: .5s;
     cursor: pointer;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import imgfooter from '../../public/img/Group.png' 
 
 function Footer() {
   return (
@@ -56,7 +57,7 @@ function Footer() {
           </div>
         </div>
 
-        <img src={"./img/Group.png"}/>
+        <img src={imgfooter}/>
     </footer>
   )
 }
