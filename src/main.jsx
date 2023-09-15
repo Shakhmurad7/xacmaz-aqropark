@@ -1,5 +1,6 @@
 import React, { createContext } from 'react'
-import ReactDOM from 'react-dom/client'
+// import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom';
 import App from './App.jsx'
 import {createStore} from "redux"
 import {Provider} from 'react-redux'
@@ -20,3 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 </Provider>
 </>
 )
+
+
+// import ReactDOM from 'react-dom/client'

@@ -35,7 +35,7 @@ function App() {
           <Route path="/Mehsullar" element={<Mehsullar />} />
           <Route path="/Vakansiyalar" element={<Vakansiyalar />} />
           <Route path="/Vakansiyalar/:id" element={<VakansiyaSingle />} />
-          <Route path="*" element={<NotFound/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </>

@@ -13,7 +13,6 @@ function NavbarContent() {
       <div className="big-container">
         <div className="header-content-block">
           <Link to={"/"}>
-            {" "}
             <img src={logo} />
           </Link>
           <div className="header-menu-icon">
