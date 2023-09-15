@@ -28,8 +28,8 @@ useEffect(()=>{
                     <div key={id} className={style['section-block']}>
                         <h3>{item}</h3>
                         <div className={style["section-text-row"]}>
-                            <p>Razılaşma əsasında</p>
-                            <b>ətraflı</b>
+                            <p>{price}</p>
+                            <b>{next}</b>
                         </div>
                         <p>{text}</p>
                         <div className={style["section-end-text"]}>

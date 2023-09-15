@@ -5,7 +5,6 @@ function rooteredux (state = {user:[]} , action){
         return {...state , user: action.payload}
     }
     return state
-    
 }
 
 export default rooteredux

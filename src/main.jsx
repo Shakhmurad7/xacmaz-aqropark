@@ -1,6 +1,5 @@
 import React, { createContext } from 'react'
-// import ReactDOM from 'react-dom/client'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {createStore} from "redux"
 import {Provider} from 'react-redux'
