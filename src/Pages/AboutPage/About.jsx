@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LayoutCompanent from "../../layoutCompanent/layoutCompanent";
 import NavBar from "../NavbarPage/NavBar";
-import style from "./About.module.css";
+import style from "./about.module.css";
 import NavbarContent from "../../layoutCompanent/NavbarContent";
 import { Link } from "react-router-dom";
 import Tab from "../../layout/Tab";

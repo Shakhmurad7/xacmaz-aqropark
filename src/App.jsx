@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import Home from "./Pages/HomePage/Home";
-import About from "./Pages/AboutPage/About";
+
 import Contact from "./Pages/Contcat/Contact";
 import News from "./Pages/News/News";
 
@@ -9,6 +9,7 @@ import Mehsullar from "./Pages/Mehsullar/Mehsullar";
 import Vakansiyalar from "./Pages/Vakansiyalar/Vakansiyalar";
 import VakansiyaSingle from "./Pages/Vakansiyalar/VakansiyaSingle";
 import NotFound from "./Pages/NotFound/NotFound";
+import About from "./Pages/AboutPage/About";
 
 const Qalereya = lazy(() => import("./Pages/Qalereya/Qalereya"));
 
@@ -28,7 +29,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />
           <Route path="/qalereya" element={<Qalereya />} />
