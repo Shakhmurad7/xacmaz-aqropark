@@ -13,12 +13,12 @@ function NavBar({menu , setmenu}) {
         <div className="nav-container">
         <ul>
             <NavLink to={'/'}><li>Ana Sehve</li></NavLink>
-            <NavLink to={'/About'}><li>Haqqımıda</li></NavLink>
-            <NavLink to={'/Mehsullar'}><li>Məhsullar</li></NavLink>
-            <NavLink to={'/News'}><li>Xəbərlər</li></NavLink>
-            <NavLink to={'/Qalereya'}><li>Qalereya</li></NavLink>
-            <NavLink to={'/Vakansiyalar'}><li>Vakansiyalar</li></NavLink>
-            <NavLink to={'/Contact'}><li>Əlaqə</li></NavLink>
+            <NavLink to={'/about'}><li>Haqqımıda</li></NavLink>
+            <NavLink to={'/mehsullar'}><li>Məhsullar</li></NavLink>
+            <NavLink to={'/news'}><li>Xəbərlər</li></NavLink>
+            <NavLink to={'/qalereya'}><li>Qalereya</li></NavLink>
+            <NavLink to={'/vakansiyalar'}><li>Vakansiyalar</li></NavLink>
+            <NavLink to={'/contact'}><li>Əlaqə</li></NavLink>
         </ul>
         <div className="block-navbar-left">
             <div className="navbar-left-page">

@@ -28,13 +28,13 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/News" element={<News />} />
-          <Route path="/Qalereya" element={<Qalereya />} />
-          <Route path="/Mehsullar" element={<Mehsullar />} />
-          <Route path="/Vakansiyalar" element={<Vakansiyalar />} />
-          <Route path="/Vakansiyalar/:id" element={<VakansiyaSingle />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/qalereya" element={<Qalereya />} />
+          <Route path="/mehsullar" element={<Mehsullar />} />
+          <Route path="/vakansiyalar" element={<Vakansiyalar />} />
+          <Route path="/vakansiyalar/:id" element={<VakansiyaSingle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
