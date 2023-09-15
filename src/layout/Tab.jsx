@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from '../Pages/AboutPage/About.module.css'
+import style from '../Pages/AboutPage/about.module.css'
 
 function Tab() {
     const [tab , settab] = useState(1)
