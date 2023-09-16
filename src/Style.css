@@ -287,7 +287,11 @@ a.active{
     width: 100%;
     max-width: 550px;
 }
+.item-left a:hover{
+    padding: 10px 50px;
+}
 .item-left a{
+    transition: .5s;
     padding: 10px 40px;
     background-color: #66B64D;
     color: white;
@@ -340,6 +344,12 @@ a.active{
     flex-direction: column;
     gap: 20px;
 }
+.section-block i{
+    transition: .5s;
+}
+.section-block-1 i{
+    transition: .5s;
+}
 .section-block{
     width: 100%;
 }
@@ -376,6 +386,9 @@ a.active{
 } 
 .section-block-row p ,.section-block-row i {
     color: black;
+}
+.section-block:hover i , .section-block-1:hover i {
+    padding: 0px 10px;
 }
 
 

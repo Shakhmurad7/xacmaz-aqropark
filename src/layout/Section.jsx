@@ -9,7 +9,7 @@ function Section() {
             <div className="section-block">
                 <img src={'./img/Rectangle 9.png'} />
                 <h3>Xəbərlər</h3>
-                <Link to ={'/'}> 
+                <Link to ={'/news'}> 
                     <div className="section-block-row">
                         <p>Ətraflı</p>
                         <i className="fa-solid fa-arrow-right"></i>
@@ -19,7 +19,7 @@ function Section() {
             <div className="section-block">
                 <img src={'./img/Rectangle 8.png'} />
                 <h3>Xəbərlər</h3>
-                <Link to ={'/'}> 
+                <Link to ={'/news'}> 
                     <div className="section-block-row">
                         <p>Ətraflı</p>
                         <i className="fa-solid fa-arrow-right"></i>
@@ -31,7 +31,7 @@ function Section() {
         <div className="section-block-1">
                 <img src={'./img/Rectangle 6.png'} />
                 <h3>Xəbərlər</h3>
-                <Link to ={'/'}> 
+                <Link to ={'/news'}> 
                     <div className="section-block-row">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                         <i className="fa-solid fa-arrow-right"></i>
@@ -41,7 +41,7 @@ function Section() {
             <div className="section-block-1">
                 <img src={'./img/Rectangle 5.png'} />
                 <h3>Xəbərlər</h3>
-                <Link to ={'/'}> 
+                <Link to ={'/news'}> 
                     <div className="section-block-row">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                         <i className="fa-solid fa-arrow-right"></i>
