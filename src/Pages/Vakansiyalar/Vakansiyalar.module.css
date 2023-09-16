@@ -70,7 +70,7 @@
 }
 .content-left{
     padding-left: 40px;
-    border-left: 1px solid 
+    border-left: 1px solid      
     #CBCBCB;
 }
 .content-left h3{
@@ -90,4 +90,76 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+/* -----page----- */
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 50px 100px;
+    padding: 80px;
+}
+.page-bolck p{
+padding: 10px;
+}
+.page-bolck ul{
+    padding-top: 10px;
+    padding-left: 30px;;
+}
+.page-bolck h2{
+    color: #66B64D;
+}
+.page-container h1{
+    color: #3d722d;
+}
+.page-container h3{
+    transition: .4s;
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px 40px ;
+    color: white;
+    background-color: #66B64D;
+    border-radius: 25px;
+}
+.page-container h3:hover{
+   transform: scaleX(1.1);
+}
+.modal input{
+    width: 100%;
+}
+.modal-input{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.modal h2{
+    text-align: center;
+}
+.modal i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.modal{
+    transition: .5s;
+    position: fixed;
+    top: 25%;
+    left:30%;
+    z-index: 1000;
+    gap: 20px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.modal.modal-none{
+    opacity: 0;
 }

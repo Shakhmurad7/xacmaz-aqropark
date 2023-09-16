@@ -29,7 +29,7 @@ useEffect(()=>{
                         <h3>{item}</h3>
                         <div className={style["section-text-row"]}>
                             <p>{price}</p>
-                            <b>{next}</b>
+                            <Link to={`/Vakansiyalar/${id}`}><b>{next}</b></Link>
                         </div>
                         <p>{text}</p>
                         <div className={style["section-end-text"]}>
@@ -52,8 +52,8 @@ useEffect(()=>{
                     <div key={id} className={style['section-block']}>
                         <h3>{item}</h3>
                         <div className={style["section-text-row"]}>
-                            <p>Razılaşma əsasında</p>
-                            <Link to={`/Vakansiyalar/${id}`}><b>ətraflı</b></Link>
+                            <p>{price}</p>
+                            <Link to={`/Vakansiyalar/${id}`}><b>{next}</b></Link>
                         </div>
                         <p>{text}</p>
                         <div className={style["section-end-text"]}>
