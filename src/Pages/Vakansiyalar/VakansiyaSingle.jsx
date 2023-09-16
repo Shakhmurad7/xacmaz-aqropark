@@ -89,24 +89,28 @@ function VakansiyaSingle({ user, dispatch }) {
           <h3 onClick={()=>setmodal(true)} >Müraciət et</h3>
 
           <div className={`modal ${modal? `modal` :`modal-none`}`}>
+              <div className="modal-content">
               <h2>Məlumatlar</h2>
               <div className='modal-input'>
-                <input type="text" />
-                <input type="text" />
+                <input type="text"  placeholder="Ad"/>
+                <input type="text" placeholder="Soyad" />
               </div>
               <div className='modal-input'>
-                <input type="text" />
-                <input type="date"/>
-                <input type="text" />
+                <input type="text" placeholder="Cinsiniz" />
+                <input type="date" placeholder="Doğum tarixi*"/>
+                <input type="text" placeholder="İş təcrübəsi*"/>
               </div>
               <div className='modal-input'>
-                <input type="text" />
-                <input type="number" />
+                <input type="email"  placeholder="Email*"/>
+                <input type="number"  placeholder="Telefon*"/>
               </div>
-              <h3>CV fayı yükləyin</h3>
+              <label for="upload-photo">CV fayı yükləyin</label>
+              <input type="file" name="photo" id="upload-photo" />    
               <p>Göndər</p>
               <i onClick={()=>setmodal(false)} className="fa-solid fa-xmark"></i>
+            </div>
           </div>
+
         </div>
 
         <div className={style["content"]}>
