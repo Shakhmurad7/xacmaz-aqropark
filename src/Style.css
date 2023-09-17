@@ -870,3 +870,19 @@ label {
         flex-direction: column;
     }
 }
+@media (max-width: 440px){
+    .header-text-pos h1{
+        font-size: 22px;
+        width: 250px;
+    }
+    .header-text-pos a{
+        padding: 10px 20px;
+    }
+    .swiper-button-next::after{
+        font-size: 20px !important;
+    }
+    .swiper-button-prev::after {
+        font-size: 20px !important;
+
+    }
+}
