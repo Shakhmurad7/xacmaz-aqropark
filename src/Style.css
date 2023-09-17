@@ -531,6 +531,9 @@ footer img {
   flex-direction: column;
   gap: 10px;
 }
+footer img{
+    width: 100%;
+}
 .footer-end-left h1 {
   font-size: 2.5rem;
 }
@@ -780,9 +783,7 @@ label {
 }
 
 @media (max-width: 1265px) {
-    footer img{
-        width: 100%;
-    }
+
   .section-block-row {
     gap: 30px;
   }
@@ -932,6 +933,9 @@ label {
     }
 }
 @media (max-width: 440px){
+    .content-top-text-navbar-block-qalereya{
+        padding: 50px 30px;
+    }
     .header-content-block{
         padding: 10px 30px;
     }

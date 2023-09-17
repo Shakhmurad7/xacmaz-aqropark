@@ -66,3 +66,33 @@
 .section-h2-text-center{ 
     font-size: 22px !important;
 }
+
+
+@media(max-width:1200px){
+    .section-container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-container-center{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width:630px){
+    .section-text h2{
+        font-size: 25px;
+    }
+    .section-big-container{
+        padding: 30px;
+    }
+    .section-img{
+        max-width: 100%;
+    }
+    .section-block{
+        height: auto;
+        flex-direction: column;
+    }
+}

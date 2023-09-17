@@ -62,10 +62,12 @@ function QalereyaCard({ user, dispatch }) {
         <div className={style['section-big-container']}>
 
           <div className={style["section-container"]}>
+            <div className={style['section-container-img1']}>
 
           {Filterdata.slice(0, 1).map(({ img , id }) => {
             return <img  key={id} src={`./img/${img}.png`} />;
           })}
+          </div>
 
           <div className={style["section-block-left"]}>
 
@@ -106,11 +108,11 @@ function QalereyaCard({ user, dispatch }) {
                     })}
             </div>
         </div>
-
+        <div className={style['section-container-img1']}>
         {Filterdata.slice(13, 14).map(({ img ,id}) => {
          return <img   key={id} src={`./img/${img}.png`} />;
             })}
-
+          </div>
 
         </div>
     </div>
