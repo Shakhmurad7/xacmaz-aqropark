@@ -6,7 +6,10 @@ function Header() {
   return (
     <>
     <div className="container-header">
-    <p>+994 50 123 45 67 / Lorem Ipsum is simply dummy text of the printing</p>
+      <div className="header-text">
+    <p>+994 50 123 45 67</p>
+    <p className='header-text-p'>Lorem Ipsum is simply dummy text of the printing</p>
+      </div>
     <div className="header-icon">
       <i className="fa-brands fa-twitter"></i>
       <i className="fa-brands fa-facebook"></i>

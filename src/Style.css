@@ -50,6 +50,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.header-text{
+    display: flex;
+    gap: 10px;
+}
 .header-icon {
   display: flex;
   gap: 20px;
@@ -783,6 +787,13 @@ label {
   }
 }
 @media (max-width: 1165px) {
+    .navbar.active{
+        gap: 0;
+        padding: 30px;
+    }
+    .nav-container{
+        gap: 80px;
+    }
   .Section-container {
     flex-direction: column;
   }
@@ -808,6 +819,10 @@ label {
   }
 }
 @media (max-width: 800px){
+    .header-text{
+        flex-direction: column;
+        gap: 0;
+    }
     .header-text-pos{
         width: 100%;
     }
@@ -838,6 +853,43 @@ label {
     }
 }
 @media (max-width: 640px){
+    .header-text-pos h1{
+        width: 450px;
+    }
+    .navbar.active ul{
+        text-align: center;
+        order: 1;
+    }
+    .nav-container{
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .navber-icon-left{
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+    .navber-icon-left i{
+        padding-left: 20px;
+    }
+    .navbar-left-page h1{
+        text-align: center;
+    }
+    .navbar-left-page{
+        padding: 0;
+    }
+    .navbar-left-page p{
+        display: none;
+    }
+    .navbar.active ul li{
+        font-size: 22px;
+    } 
+    .container-header{
+        padding: 10px 20px;
+    }
     .content{
         padding: 50px 20px;
     }
@@ -871,6 +923,9 @@ label {
     }
 }
 @media (max-width: 440px){
+        .header-text-p{
+            display: none;
+        }
     .header-text-pos h1{
         font-size: 22px;
         width: 250px;
@@ -884,5 +939,11 @@ label {
     .swiper-button-prev::after {
         font-size: 20px !important;
 
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        right: 80px !important;
+    }
+    .header-text-pos{
+        left: 30px;
     }
 }

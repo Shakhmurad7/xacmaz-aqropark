@@ -57,7 +57,7 @@ function Home() {
     <div className="header-text-pos">
       <p>Məhsullar</p>
       <h1>Biz aqrobiznes kommunikasiyaları ilə məşğul oluruq</h1>
-      <Link to={"/"} >Haqqımızda</Link>
+      <Link to={"/about"} >Haqqımızda</Link>
     </div>
     </Swiper>
 
