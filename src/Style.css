@@ -570,14 +570,15 @@ footer img {
 .content-text-navbar-block p {
   font-size: 25px;
 }
+.content-text-navbar-block h2{
+    width: 100%;
+    max-width: 800px;
+}
 .content-text-navbar-block {
   color: white;
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 10;
-  width: 100%;
-  max-width: 850px;
   font-size: 30px;
   bottom: 30px;
   left: 80px;
@@ -853,6 +854,13 @@ label {
     }
 }
 @media (max-width: 640px){
+    .content-text-navbar-block {
+        gap: 15px;
+        left: 30px;
+    }
+    .content-text-navbar-block h2{
+        font-size:30px;
+    }
     .header-text-pos h1{
         width: 450px;
     }
@@ -876,6 +884,7 @@ label {
         padding-left: 20px;
     }
     .navbar-left-page h1{
+        font-size: 25px;
         text-align: center;
     }
     .navbar-left-page{
@@ -923,6 +932,9 @@ label {
     }
 }
 @media (max-width: 440px){
+    .header-content-block{
+        padding: 10px 30px;
+    }
         .header-text-p{
             display: none;
         }

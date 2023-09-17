@@ -34,3 +34,28 @@
     gap: 40px;
     align-items: center;
 }
+
+@media(max-width:1100px){
+    .section-block img{
+        width: 100%;
+        max-width: 500px;
+
+    }
+    .content-container{
+        gap: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-big-container{
+        padding: 100px 30px;
+    }   
+}
+@media(max-width:650px){
+    .section-block{
+        flex-direction: column;
+    }
+    .section-tetx{
+        order: 1;
+    }
+}
