@@ -14,6 +14,7 @@ import About from "./Pages/AboutPage/About";
 const Qalereya = lazy(() => import("./Pages/Qalereya/Qalereya"));
 
 function App() {
+  //test
   return (
     <>
       <Suspense
