@@ -789,6 +789,9 @@ label {
   }
 }
 @media (max-width: 1165px) {
+  .modal-content{
+    left: 17%;
+  }
     .navbar.active{
         gap: 0;
         padding: 30px;
@@ -821,6 +824,9 @@ label {
   }
 }
 @media (max-width: 800px){
+  .modal-content{
+    left: 2%;
+  }
     .header-text{
         flex-direction: column;
         gap: 0;
@@ -855,6 +861,19 @@ label {
     }
 }
 @media (max-width: 640px){
+  .modal{
+    padding: 20px;
+  }
+  .modal-content {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .modal-input {
+    flex-direction: column;
+  }
+  .content-top-text-navbar-block{
+    flex-direction: column;
+  }
     .content-text-navbar-block {
         gap: 15px;
         left: 30px;
