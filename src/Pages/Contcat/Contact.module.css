@@ -72,3 +72,36 @@
     align-items: center;
     gap: 5px;
 }
+
+@media(max-width:1160px){
+
+    .section-map{
+        flex-direction: column;
+    }
+    .section-map-left::after{
+        display: none;
+    }
+    .section-map-left{
+        max-width: 100%;
+    }
+    .section-map-left iframe{
+        border-radius: 0px;
+    }
+}
+@media(max-width:800px){
+    .section-map{
+        padding: 20px;
+    }
+    
+    .section-right-block-row{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .right-block-icon{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .section-right-block{
+        padding: 20px;
+    }
+}
