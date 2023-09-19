@@ -135,7 +135,7 @@ a.active {
 }
 .navbar.active ul a {
   color: white;
-  font-size: 35px;
+  font-size: 25px;
 }
 .navbar.active ul li {
   list-style: none;

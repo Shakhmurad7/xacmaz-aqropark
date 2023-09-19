@@ -23,7 +23,7 @@ useEffect(()=>{
 <div className={style["section-conatiner"]}>
         {
             
-            user.slice(0,3).map(({id , item , text , price, next , time , endtime})=>{
+            user.length && user.slice(0,3).map(({id , item , text , price, next , time , endtime})=>{
                 return(
                     <div key={id} className={style['section-block']}>
                         <h3>{item}</h3>
@@ -47,7 +47,7 @@ useEffect(()=>{
 <div className={style["section-conatiner"]}>
         {
             
-            user.slice(3,6).map(({id , item , text , price, next , time , endtime})=>{
+            user.length &&  user.slice(3,6).map(({id , item , text , price, next , time , endtime})=>{
                 return(
                     <div key={id} className={style['section-block']}>
                         <h3>{item}</h3>
